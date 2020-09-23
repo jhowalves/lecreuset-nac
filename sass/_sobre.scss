@@ -1,0 +1,53 @@
+.sobre {
+    @extend .flex;
+
+    @include base(false);
+
+    padding: 150px 0 30px 0;
+
+    .content-sb {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .description {
+        padding: 0 30px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        padding: 100px 0 30px 0;
+        letter-spacing: 2px;
+    }
+}
+
+.evento {
+    @extend .flex;
+
+    background-image: url(../images/background-event.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 250px;
+
+    h1 {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        color: $color-primary;
+        letter-spacing: 2px;
+    }
+
+    a {
+        padding: 40px;
+    }
+}

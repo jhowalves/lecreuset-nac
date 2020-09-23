@@ -1,0 +1,105 @@
+$font-title: "Bebas Neue", cursive;
+$back-header: #000;
+$color-tb: #ccc;
+$color-primary: #fff;
+
+@mixin base($isAuto: true) {
+    width: 100%;
+    background-color: #fff;
+
+    @if $isAuto {
+        margin-bottom: 50px;
+    }
+}
+
+@mixin titulo($isActive: false) {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 100px;
+
+    @if $isActive {
+        padding: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0 auto;
+}
+
+body {
+    font-family: $font-title;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: $back-header;
+    width: 100%;
+    height: 60px;
+
+    @extend .flex;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-family: $font-title;
+
+    .topo {
+        max-width: 1100px;
+        flex: 1;
+        justify-content: space-between;
+        letter-spacing: 2px;
+    }
+
+    .logo {
+        color: $color-tb;
+        float: left;
+        font-size: 35px;
+        padding-top: 12.5px;
+        text-transform: uppercase;
+    }
+
+    .menu {
+        float: right;
+
+        li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        a {
+            color: $color-tb;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+footer {
+    background-color: $back-header;
+    width: 100%;
+
+    .bottom {
+        padding: 50px;
+    }
+
+    .logo-footer {
+        color: $color-tb;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    p {
+        color: $color-tb;
+        text-align: center;
+    }
+}

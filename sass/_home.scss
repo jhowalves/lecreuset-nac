@@ -1,0 +1,34 @@
+.back {
+    @extend .flex;
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner {
+        @extend .flex;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: $color-primary;
+        font-size: 45px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    p {
+        color: $color-primary;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+}

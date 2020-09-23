@@ -1,0 +1,54 @@
+.map iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+}
+
+.titulo-cont {
+    @include titulo(true);
+}
+
+.contato {
+    @extend .flex;
+
+    @include base;
+
+    .input-sb {
+        width: 500px;
+        padding: 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        color: #333;
+        margin: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .input-sb:focus {
+        border-color: #333;
+    }
+
+    .txt-sb {
+        width: 500px;
+        height: 150px;
+        padding: 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        color: #333;
+        margin: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .btn {
+        width: 100px;
+        padding: 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #000;
+        color: #ccc;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
